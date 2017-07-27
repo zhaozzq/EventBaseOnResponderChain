@@ -19,6 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)action:(UIButton *)sender {
+     UIViewController *controller = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"FirstController"];
+    [self presentViewController:controller animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
